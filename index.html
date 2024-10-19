@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Adiciona Chart.js -->
+    <script src="index.js" defer></script> 
+    <script src="chart.js" defer></script> <!-- Script do gráfico de pizza -->
+    <title>Novo Ativo</title>
+</head>
+<body>
+    
+    <header>
+        <h1 id='titulo'>ACTION BANK</h1>
+        <p id="subtitulo">Sua carteira de investimentos</p>
+    </header>
+    
+    <main style="background-color: #fff">
+        <div class="container-wrapper">   
+            <div class="container">
+            <h1>Minha Carteira de Investimentos</h1>
+            
+            <button id="toggleNovoAtivo">Adicionar Novo Ativo</button>
+            
+            <div id="novoAtivo" style="display: none;"> 
+                <label for="ativo">Ativo:</label>
+            <select id="ativo">
+                <option value="Selecione">SELECIONE</option>
+                <option value="PETR4">Petrobras (PETR4)</option>
+                <option value="VALE3">Vale (VALE3)</option>
+                <option value="ITUB4">Itaú Unibanco (ITUB4 </option>
+                <option value="BBDC4">Bradesco (BBDC4)</option>
+                <option value="ABEV3">Ambev (ABEV3)</option>
+                <option value="BBAS3">Banco do Brasil (BBAS3)</option>
+                <option value="WEGE3">Weg (WEGE3)</option>
+                <option value="RENT3">Localiza (RENT3)</option>
+                <option value="LREN3">Lojas Renner (LREN3)</option>
+                <option value="MGLU3">Magazine Luiza (MGLU3)</option>
+            </select>
+
+
+                <label for="preco">Preço unitário:</label>
+                <input type="number" id="preco" placeholder="Digite o preço unitário">
+                
+                <br>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" placeholder="Digite a quantidade">
+                
+                <label for="data">Data:</label>
+                <input type="date" id="data" placeholder="Digite a data">
+                
+                <button id="adicionarAtivoBtn">Salvar</button>
+            </div>
+
+            <h3 id="resultado"></h3>
+            
+            <div id="portifolioContainer" style="display: none;"> 
+                <h4>Portfólio:</h4> 
+                <table id="portfolio">
+                    <thead>
+                        <tr>
+                            <th>Ativo</th>
+                            <th>Quantidade Total</th>
+                            <th>Valor Médio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="portfolio-body"></tbody>
+                </table>
+            </div>
+
+           
+            <div id="historicoContainer" style="display: none;"> 
+                <h4>Histórico de Compras:</h4>
+                    <table id="historico-table">
+                        <thead>
+                            <tr>
+                                <th>Ativo</th>
+                                <th>Quantidade</th>
+                                <th>Preço Unitário</th>
+                                <th>Total</th>
+                                <th>Data</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historico-body"></tbody>
+                    </table>
+                </div>
+            
+            <button id="togglePortifolio">Mostrar Portifólio</button> 
+            <button id="toggleHistorico">Mostrar Histórico</button> 
+            <button id="limparTudo">Limpar Tudo</button>
+            
+            </div>
+            
+            <div id="containerGrafico">
+                <h1 id="portifolioTitulo">Gráfico do Portfólio</h1>
+                <div>
+                    <div style="position: relative; height: 400px;">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    
+                </div>
+                
+                <label class="abaGrafico" for="tipoGrafico">Mostrar:</label>
+                <select id="tipoGrafico">
+                    <option value="quantidade">Quantidade Total</option>
+                    <option value="valorMedio">Valor Médio</option>
+                </select>
+                
+            </div>
+
+        
+        </div>
+
+    </main>
+
+    <footer>
+        <p id="textFooter">&copy; 2024 ACTION BANK. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,250 @@
+#pieChart {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4169E1; 
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo {
+    color: #f1f1f1;
+    font-family:'Montserrat', sans-serif;
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+main {
+    flex: 1; 
+    padding: 20px; 
+    margin-bottom: 0px; 
+    background-color: #f9f9f9; 
+    margin: 0; 
+}
+
+
+footer {
+    background-color: #4169E1;
+    padding: 10px;
+    text-align: center;
+    margin: 0; 
+
+}
+
+#textFooter{
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-wrapper {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px;
+    gap: 20px; 
+    font-family: 'Roboto';
+}
+
+.container {
+    flex: 1; 
+    max-width: 600px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top: 1px;
+    margin-left: 50px;
+}
+
+#containerGrafico {
+    flex: 1; 
+    max-width: 600px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-right: 50px;
+
+}
+
+button {
+    background-color: #4169E1; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.6s ease;
+}
+
+button:hover {
+    background-color: #00008B; 
+}
+
+/* Estilo da tabela do portfólio */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+th {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Efeito hover para as linhas */
+}
+
+#novoAtivo {
+    margin-top: 20px; /* Espaçamento acima da seção de novo ativo */
+}
+
+#adicionarAtivoBtn{
+    padding:  5px 8px ;
+    font-size: 15px;
+    margin-left: 10px;
+
+
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+#subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 1px;
+}
+
+#portifolioTitulo{
+    text-align: center;
+}
+
+.abaGrafico {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-right: 10px;
+}
+
+select#tipoGrafico {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    background-color: #fff; /* Cor de fundo do seletor */
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+
+#resultado{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    font-size: 20px;
+    color:#136f19;
+}
+
+#novoAtivo{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+#novoAtivo {
+    margin-top: 20px; /* Espaçamento acima da seção de novo ativo */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda sutil */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#novoAtivo label {
+    font-weight: bold; /* Negrito para os rótulos */
+    margin-top: 10px; /* Espaçamento superior entre os rótulos */
+    display: block; /* Exibe cada rótulo em uma nova linha */
+}
+
+#novoAtivo input,
+#novoAtivo select {
+    width: calc(100% - 20px); /* Largura total menos padding */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 5px; /* Espaçamento acima dos campos */
+    margin-bottom: 15px; /* Espaçamento abaixo dos campos */
+    border: 1px solid #ccc; /* Borda sutil */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: 'Roboto', sans-serif; /* Fonte consistente */
+    transition: border-color 0.3s ease; /* Transição suave na borda */
+}
+
+#novoAtivo input:focus,
+#novoAtivo select:focus {
+    border-color: #4169E1; /* Cor da borda quando em foco */
+    outline: none; /* Remove o contorno padrão */
+}
+
+#adicionarAtivoBtn {
+    background-color: #4169E1; /* Cor do botão para adicionar ativo */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+}
+
+#adicionarAtivoBtn:hover {
+    background-color: #00008B; /* Cor do botão ao passar o mouse */
+}
