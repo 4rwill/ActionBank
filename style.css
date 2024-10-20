@@ -29,7 +29,7 @@ header {
 
 #titulo {
     color: #f1f1f1;
-    font-family:'Montserrat', sans-serif;
+    font-family:'Roboto', sans-serif;
     font-size: 38px;
     margin-top: 10px;
 }
@@ -106,7 +106,6 @@ button:hover {
     background-color: #00008B; 
 }
 
-/* Estilo da tabela do portfólio */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -130,11 +129,11 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #f1f1f1; /* Efeito hover para as linhas */
+    background-color: #f1f1f1;  
 }
 
 #novoAtivo {
-    margin-top: 20px; /* Espaçamento acima da seção de novo ativo */
+    margin-top: 20px;  
 }
 
 #adicionarAtivoBtn{
@@ -181,15 +180,14 @@ select#tipoGrafico {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #000000;
-    background-color: #fff; /* Cor de fundo do seletor */
+    background-color: #fff; 
     border: none;
-    border-radius: 8px; /* Bordas arredondadas */
+    border-radius: 8px; 
     padding: 10px 10px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
-
 
 #resultado{
     font-family: 'Roboto', sans-serif;
@@ -202,49 +200,44 @@ select#tipoGrafico {
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-
-
-
 #novoAtivo {
-    margin-top: 20px; /* Espaçamento acima da seção de novo ativo */
-    padding: 20px; /* Espaçamento interno */
-    border: 1px solid #ccc; /* Borda sutil */
-    border-radius: 10px; /* Bordas arredondadas */
-    background-color: #f9f9f9; /* Cor de fundo */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px; 
+    padding: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 #novoAtivo label {
-    font-weight: bold; /* Negrito para os rótulos */
-    margin-top: 10px; /* Espaçamento superior entre os rótulos */
-    display: block; /* Exibe cada rótulo em uma nova linha */
+    font-weight: bold; 
+    margin-top: 10px; 
+    display: block; 
 }
 
 #novoAtivo input,
 #novoAtivo select {
-    width: calc(100% - 20px); /* Largura total menos padding */
-    padding: 10px; /* Espaçamento interno */
-    margin-top: 5px; /* Espaçamento acima dos campos */
-    margin-bottom: 15px; /* Espaçamento abaixo dos campos */
-    border: 1px solid #ccc; /* Borda sutil */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-family: 'Roboto', sans-serif; /* Fonte consistente */
-    transition: border-color 0.3s ease; /* Transição suave na borda */
+    width: calc(100% - 20px);  
+    padding: 10px; 
+    margin-top: 5px; 
+    margin-bottom: 15px;  
+    border: 1px solid #ccc; 
+    border-radius: 5px;  
+    font-family: 'Roboto', sans-serif;  
+    transition: border-color 0.3s ease;  
 }
 
 #novoAtivo input:focus,
 #novoAtivo select:focus {
-    border-color: #4169E1; /* Cor da borda quando em foco */
-    outline: none; /* Remove o contorno padrão */
+    border-color: #4169E1; 
+    outline: none; 
 }
 
 #adicionarAtivoBtn {
-    background-color: #4169E1; /* Cor do botão para adicionar ativo */
-    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+    background-color: #4169E1; 
+    transition: background-color 0.3s ease; 
 }
 
 #adicionarAtivoBtn:hover {
-    background-color: #00008B; /* Cor do botão ao passar o mouse */
+    background-color: #00008B; 
 }

@@ -1,4 +1,4 @@
-// FUNÇÕES PARA MANTER OS DADOS NO NAVEGADOR
+//aqui são as funções pra manter os dados guardado localmente
 //getFromLocalStorage: recebe uma key e um valor padrão, se não achar o valor da key ela retorna o valor padrão 
 //setInLocalStorage: é para armazenar o valor e converter em JSON
 const getFromLocalStorage = (key, defaultValue) => JSON.parse(localStorage.getItem(key)) || defaultValue;
@@ -15,7 +15,6 @@ const setAtivos = (ativos) => setInLocalStorage('ativos', ativos);
 const getHistorico = () => getFromLocalStorage('historico', []);   
 const setHistorico = (historico) => setInLocalStorage('historico', historico);  
 
-// ADICIONAR UM ATIVO
 const adicionarAtivo = () => {
     //aqui nessa primeira parte é pra capturar os valores preenchidos no formulario de adicionar ativos e tal
     //pega os valores pela Id do html e quando precisa converte pro tipo que precisa ser usado
@@ -108,7 +107,6 @@ const renderizarHistorico = () => {
 };
 
 
-// Renderiza o portfólio
 const renderizarPortfolio = () => {
     //ele vai seguindo praticamente a mesma ideia do histórico
     //as mudanças que tem é devido ao contexto, tipo o valor médio que tem nesse caso
